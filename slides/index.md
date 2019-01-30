@@ -24,11 +24,14 @@ https://theimowski.com
 
 # Plan
 
-* Slogan
-* History, evolution
-* Platforms
-* Examples with Demo - after each mentioned platform, maybe a bit of live coding
-* ? Domains
+- Slogan
+- History, evolution
+- Platforms
+    - Examples with Demo
+    - after each mentioned platform, 
+    - maybe a bit of live coding
+- Mixing platforms
+- ? Domains
 
 ***
 
@@ -38,73 +41,92 @@ https://theimowski.com
 
 # History
 
-* .NET
-* Mono
-* .NET Core
-* Fable
+- .NET
+- Mono
+- Xamarin
+- .NET Core
+- Fable
+- Fabulous
 
 ***
 
 # Platforms
 
-* Desktop
-* Web
-* Mobile
-* Serverless
-* IOT
-* Other platforms
+- Desktop
+- Web
+- Mobile
+- Serverless
+- IoT
+- Other platforms
 
 ***
 
 ## Desktop
 
-* Windows
-* Linux
-* Mac
+- Windows
+- Linux
+- Mac
 
 ***
 
 ## Web
 
-* JavaScript
-* ? WASM
-* SAFE
+- Fable
+- JavaScript
+- HTML
+- CSS
+- ? WASM
 
 ***
 
 ## Mobile
 
-* Fabulous
-* React Native
+- Xamarin
+- Fabulous
+- React Native
 
 ***
 
 ## Serverless
 
-* Azure Functions
-* AWS Lambda
+- Azure Functions
+- AWS Lambda
 
 ***
 
-## IOT
+## IoT
+
+- Raspberry PI https://github.com/pkese/raspberry-fsharp
+- ARM?
 
 ***
 
 ## Other platforms
 
-* Fez
-* ... ?
+- Fez
+- ... ?
 
 ***
 
-## Examples
+# Mixing platforms
+
+- SAFE
+- Not just Web apps
+
+***
+
+# ? Domains
+
+***
+
+# Recap
 
 ***
 
 ### Notes 
 
-* .NET Core
-    * x-plat
-    * SDK
-    * templates
-    * multi-target (full .net, .net core)
+- .NET Core
+- x-plat
+- SDK
+- templates
+- multi-target (full .net, .net core)

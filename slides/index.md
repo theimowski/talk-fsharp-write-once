@@ -107,6 +107,12 @@ https://theimowski.com
 
 <img src="images/fabulous.png" style="width: 600px; background: white"  />
 
+---
+
+https://fsharp.org/history/
+
+![history](images/history-hopl.png)
+
 ***
 
 # Platforms
@@ -167,13 +173,13 @@ https://theimowski.com
 
 ### Demo
 
-* OSX
-* Vagrant windows
-* Vagrant ubuntu
-* dotnet new console
-* print OS name
-* run on all OS
-* fabulous (gui) / xamarin / electron
+* OSX + Vagrant windows + Vagrant ubuntu
+* dotnet new console, run on all OS
+* dotnet watch run, print OS name, run on all OS
+
+* Maybe Desktop gui demo after "WEB" ?
+* https://github.com/fable-compiler/samples-electron, run on all OS
+* mention fabulous: WPF, GTK, Mac
 
 ***
 
@@ -253,6 +259,7 @@ https://theimowski.com
 
 - Fez
 - FAKE
+- various DSL like Pulumi?
 - ... ?
 
 ***

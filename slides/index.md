@@ -24,22 +24,52 @@ https://theimowski.com
 
 # Plan
 
-- Slogan
+- Goal
+- The slogan
 - History, evolution
 - Platforms
-    - Examples with Demo
-    - after each mentioned platform, 
-    - maybe a bit of live coding
 - Mixing platforms
 - ? Domains
 
 ***
 
-# Slogan
+# Goal
+
+- no inventions
+- discover possibilities
+- share experiences
+- inspire ideas
+
+***
+
+# The slogan
+
+## Write once, run anywhere
+
+- Sun Microsystems
+- Java cross-platform benefits
+- Variations: "Write once, **debug** anywhere"
+- Copied to make my talk more catchy
+
+https://en.wikipedia.org/wiki/Write_once,_run_anywhere
+
+---
+
+![one_does_not_simply.jpg](images/one_does_not_simply.jpg)
 
 ***
 
 # History
+
+- F# evolution
+- influential platforms
+- possibly not in chronological order
+
+---
+
+https://fsharp.org/history/
+
+![history](images/history-hopl.png)
 
 ---
 
@@ -107,19 +137,13 @@ https://theimowski.com
 
 <img src="images/fabulous.png" style="width: 600px; background: white"  />
 
----
-
-https://fsharp.org/history/
-
-![history](images/history-hopl.png)
-
 ***
 
 # Platforms
 
 - Desktop
-- Web
 - Mobile
+- Web
 - IoT
 - Docker
 - Serverless
@@ -179,7 +203,9 @@ https://fsharp.org/history/
 
 * Maybe Desktop gui demo after "WEB" ?
 * https://github.com/fable-compiler/samples-electron, run on all OS
+* or maybe https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
 * mention fabulous: WPF, GTK, Mac
+
 
 ***
 
@@ -198,7 +224,7 @@ https://fsharp.org/history/
 * Fable template
 * Elmish
 * React
-* CSS
+* CSS (new Type provider)
 * HMR
 
 ***
@@ -213,7 +239,11 @@ https://fsharp.org/history/
 
 ### Demo
 
-* Fabulous app for iOS and Android?
+* Fabulous app for iOS and Android
+
+***
+
+## Back to Desktop
 
 ***
 
@@ -227,6 +257,9 @@ https://fsharp.org/history/
 ### Demo
 
 - video? / @forki audio project?
+- https://twitter.com/search?q=%23fableconf%20raspberry&src=typd
+- https://twitter.com/sforkmann/status/1076600804935680000
+- https://twitter.com/sforkmann/status/1049722323262160898
 
 ***
 
@@ -259,6 +292,7 @@ https://fsharp.org/history/
 
 - Fez
 - FAKE
+- Tests?
 - various DSL like Pulumi?
 - ... ?
 
@@ -269,6 +303,7 @@ https://fsharp.org/history/
 - SAFE
 - Not just Web apps
 - Sharing code
+- Datto RMM
 
 ---
 

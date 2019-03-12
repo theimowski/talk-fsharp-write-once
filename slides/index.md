@@ -39,6 +39,7 @@ https://theimowski.com
 - discover possibilities
 - share experiences
 - inspire ideas
+- praise F#
 
 ***
 
@@ -48,7 +49,6 @@ https://theimowski.com
 
 - Sun Microsystems
 - Java cross-platform benefits
-- Variations: "Write once, **debug** anywhere"
 - Copied to make my talk more catchy
 
 https://en.wikipedia.org/wiki/Write_once,_run_anywhere
@@ -56,6 +56,14 @@ https://en.wikipedia.org/wiki/Write_once,_run_anywhere
 ---
 
 ![one_does_not_simply.jpg](images/one_does_not_simply.jpg)
+
+---
+
+![java_debug_everywhere.png](images/java_debug_everywhere.png)
+
+<small>
+https://blog.silentsignal.eu/2014/02/09/jdb-tricks-hacking-java-debug-wire/
+</small>
 
 ***
 
@@ -153,6 +161,11 @@ https://fsharp.org/history/
 
 ## Desktop
 
+* .NET Core
+* .NET SDK
+    * templates
+    * watch mode
+
 ---
 
 - data-transition : fade
@@ -195,37 +208,61 @@ https://fsharp.org/history/
 
 ---
 
-### Demo
+### Desktop Demo
 
-* OSX + Vagrant windows + Vagrant ubuntu
-* dotnet new console, run on all OS
-* dotnet watch run, print OS name, run on all OS
+* 3 Operating systems:
+    * OSX (local MacBook)
+    * Windows (Virtualbox, Vagrant)
+    * Ubuntu (Virtualbox, Vagrant)
+* Create console app using .NET SDK
+* Print OS information
+* Run the app on all OS
+* Run "watch" mode
 
-* Maybe Desktop gui demo after "WEB" ?
-* https://github.com/fable-compiler/samples-electron, run on all OS
-* or maybe https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
-* mention fabulous: WPF, GTK, Mac
+https://www.vagrantup.com/
 
+---
+
+### Desktop Demo recap
+
+* Cross-platform .NET SDK
+* Easy to set up
+* Caution: "watch" + multi OS doesn't work with Paket
+* What about GUI?
 
 ***
 
 ## Web
 
 - Fable
-- JavaScript
-- HTML
-- CSS
-- ? WASM
+    - JavaScript
+    - HTML
+    - CSS
+    - ? WASM
+- WebSharper
 
 ---
 
-### Demo
+### Web Demo
 
 * Fable template
 * Elmish
 * React
 * CSS (new Type provider)
 * HMR
+
+***
+
+## Desktop GUI
+
+---
+
+### Desktop GUI Demo
+
+* Maybe Desktop gui demo after "WEB" ?
+* https://github.com/fable-compiler/samples-electron, run on all OS
+* or maybe https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
+* mention fabulous: WPF, GTK, Mac
 
 ***
 

@@ -234,12 +234,14 @@ https://www.vagrantup.com/
 
 ## Web
 
-- Fable
+- Frameworks
+    - Fable
+    - WebSharper
+- Output
     - JavaScript
     - HTML
     - CSS
-    - ? WASM
-- WebSharper
+    - Web Assembly *
 
 ---
 
@@ -249,28 +251,39 @@ https://www.vagrantup.com/
 * Elmish
 * React
 * CSS (new Type provider)
-* HMR
+* Hot Module Replacement
+* Various browsers ?
 
 ***
 
 ## Desktop GUI
 
+* Electron https://electronjs.org/
+    * uses Node.js and Chromium
+    * F# -> Fable -> Electron
+* Fabulous
+    * WPF
+    * GTK
+    * Mac
+
 ---
 
 ### Desktop GUI Demo
 
-* Maybe Desktop gui demo after "WEB" ?
-* https://github.com/fable-compiler/samples-electron, run on all OS
-* or maybe https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
-* mention fabulous: WPF, GTK, Mac
+* https://github.com/fable-compiler/samples-electron, or
+* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
+* run on all OS
 
 ***
 
 ## Mobile
 
-- Xamarin
-- Fabulous
-- React Native
+- Frameworks
+    - Xamarin + Fabulous
+    - React Native (again via Fable)
+- Targets
+    - Android
+    - iOS
 
 ---
 
@@ -280,23 +293,23 @@ https://www.vagrantup.com/
 
 ***
 
-## Back to Desktop
-
-***
-
 ## IoT
 
-- Raspberry PI https://github.com/pkese/raspberry-fsharp
-- ARM?
+- .NET Core to ARM architecture
+    - linux-arm
+    - win-arm
 
 ---
 
-### Demo
+### IoT Demo
 
-- video? / @forki audio project?
-- https://twitter.com/search?q=%23fableconf%20raspberry&src=typd
-- https://twitter.com/sforkmann/status/1076600804935680000
-- https://twitter.com/sforkmann/status/1049722323262160898
+![images/forki_audio.png](images/forki_audio.png)
+
+---
+
+### IoT Demo
+
+https://twitter.com/sforkmann/status/1049722323262160898
 
 ***
 
@@ -306,7 +319,7 @@ https://www.vagrantup.com/
 
 ---
 
-### Demo
+### Docker Demo
 
 - e.g. Docker deploy from SAFE template
 
@@ -365,3 +378,4 @@ https://www.vagrantup.com/
 - SDK
 - templates
 - multi-target (full .net, .net core)
+- create gifs / videos for demos fallback

@@ -29,7 +29,6 @@ https://theimowski.com
 - History, evolution
 - Platforms
 - Mixing platforms
-- ? Domains
 
 ***
 
@@ -338,7 +337,7 @@ https://twitter.com/sforkmann/status/1049722323262160898
 
 ***
 
-## Other platforms
+## Other platforms & tools
 
 - Fez
 - FAKE
@@ -357,13 +356,106 @@ https://twitter.com/sforkmann/status/1049722323262160898
 
 ---
 
-### Bonus demo
+## SAFE - Web
 
-- Go crazy and reuse code for desktop, JS, server, mobile
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
 
-***
+<br/>
+<br/>
 
-# ? Domains
+* Web server: F# -> .NET Core
+* Web client: F# -> JavaScript
+* Cloud access: F# -> Azure
+* Shared F# code:
+    * Data-Transfer Objects
+    * Remote call protocols
+    * Server-side & client-side validation
+    * etc...
+* https://safe-stack.github.io/docs/
+* https://github.com/SAFE-Stack/SAFE-template
+* https://github.com/SAFE-Stack/SAFE-BookStore
+
+---
+
+## SAFE - Mobile
+
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+
+<br/>
+<br/>
+
+* REST API: F# -> .NET Core
+* Mobile apps: F# -> JS -> React Native -> iOS + Android
+* Shared F# code:
+    * Business logic
+    * Mobile device OS classification
+    * etc...
+* https://github.com/SAFE-Stack/SAFE-Nightwatch
+
+---
+
+## SAFE - IoT
+
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+
+<br/>
+<br/>
+
+* Web server: F# -> .NET Core
+* Web client: F# -> JavaScript
+* Raspberry PI: F# -> .NET Core (linux-arm RID)
+* Shared F# code:
+    * Determining firmware
+    * Communication protocol
+    * etc...
+* https://github.com/forki/audio
+
+---
+
+## SAFE - Desktop
+
+
+<img src="images/datto-logo.png" style="width:360px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/heart.png" style="padding-left: 20px; padding-right: 20px; width:100px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/safe.png" style="width:200px; background: transparent; border:none; box-shadow: none"  />
+
+
+<br/>
+<br/>
+
+* Remote Desktop in a browser (alpha version)
+* Device Agent: 
+    * F# -> .NET Core and .NET 4.0
+    * Windows, OSX and Linux
+* Browser viewer: F# -> JS
+* Development web server: F# -> .NET Core
+* Shared F# code:
+    * HTTP & WebSocket payload DTOs
+    * JSON serialisation (Thoth.Json)
+    * Protocol for Web Remote Desktop (Apache Guacamole)
+* https://www.datto.com/business-management/datto-rmm
+
+---
+
+- data-background : images/datto-rmm-rto-screen.png
+- data-background-size : contain
+
+---
+
+## SAFE - All inclusive?
+
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+
+<br/>
+<br/>
+
+- Desktop
+- Mobile
+- Web
+- IoT
+- Docker
+- Serverless
+- Other?
 
 ***
 

@@ -24,7 +24,7 @@ https://theimowski.com
 
 # Plan
 
-- Goal
+- Goals
 - The slogan
 - History, evolution
 - Platforms
@@ -32,13 +32,12 @@ https://theimowski.com
 
 ***
 
-# Goal
+# Goals
 
-- no inventions
-- discover possibilities
-- share experiences
-- inspire ideas
-- praise F#
+- Review possibilities
+- Share experiences
+- Inspire ideas
+- Praise F#
 
 ***
 
@@ -69,7 +68,7 @@ https://blog.silentsignal.eu/2014/02/09/jdb-tricks-hacking-java-debug-wire/
 # History
 
 - F# evolution
-- influential platforms
+- influential platforms / tools
 - possibly not in chronological order
 
 ---
@@ -160,6 +159,12 @@ https://fsharp.org/history/
 
 ## Desktop
 
+<img src="images/desktop_windows.jpg" style="width: 300px; background: white"  />
+<img src="images/desktop_linux.jpg" style="width: 280px; background: white"  />
+<img src="images/desktop_mac.png" style="width: 290px; background: white"  />
+
+<br/>
+
 * .NET Core
 * .NET SDK
     * templates
@@ -167,26 +172,7 @@ https://fsharp.org/history/
 
 ---
 
-- data-transition : fade
-- data-transition-speed : slow
 
-<img src="images/desktop_windows.jpg" style="width: 600px; background: white"  />
-
----
-
-- data-transition : fade
-- data-transition-speed : slow
-
-<img src="images/desktop_linux.jpg" style="width: 600px; background: white"  />
-
----
-
-- data-transition : fade
-- data-transition-speed : slow
-
-<img src="images/desktop_mac.png" style="width: 600px; background: white"  />
-
----
 
 ### NET Core 3.0 Supported OS
 
@@ -233,6 +219,10 @@ https://www.vagrantup.com/
 
 ## Web
 
+<img src="images/web.jpeg" style="width: 400px; background: white"  />
+
+<br/>
+
 - Frameworks
     - Fable
     - WebSharper
@@ -244,22 +234,40 @@ https://www.vagrantup.com/
 
 ---
 
+<img src="images/fable.png" style="width: 500px; background: white"  />
+
+
+---
+
 ### Web Demo
 
 * Fable template
 * Elmish
 * React
-* CSS (new Type provider)
 * Hot Module Replacement
+* CSS (new Type provider) ?
 * Various browsers ?
+
+---
+
+### Web Demo recap
+
+* ...
+* JavaScript - not only Web
 
 ***
 
 ## Desktop GUI
 
+
+<img src="images/desktop_windows.jpg" style="width: 300px; background: white"  />
+<img src="images/desktop_linux.jpg" style="width: 280px; background: white"  />
+<img src="images/desktop_mac.png" style="width: 290px; background: white"  />
+
+
 * Electron https://electronjs.org/
     * uses Node.js and Chromium
-    * F# -> Fable -> Electron
+    * F# -> Fable -> JS -> Electron
 * Fabulous
     * WPF
     * GTK
@@ -270,12 +278,15 @@ https://www.vagrantup.com/
 ### Desktop GUI Demo
 
 * https://github.com/fable-compiler/samples-electron, or
-* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo
+* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo, or 
+* https://github.com/fable-compiler/fable-templates/tree/master/electron/Content
 * run on all OS
 
 ***
 
 ## Mobile
+
+<img src="images/ios-vs-android.jpg" style="width: 400px; background: white"  />
 
 - Frameworks
     - Xamarin + Fabulous
@@ -286,7 +297,7 @@ https://www.vagrantup.com/
 
 ---
 
-### Demo
+### Mobile Demo
 
 * Fabulous app for iOS and Android
 
@@ -294,65 +305,107 @@ https://www.vagrantup.com/
 
 ## IoT
 
+<img src="images/raspberry.png" style="width: 400px; background: white"  />
+
+<br/>
+
 - .NET Core to ARM architecture
     - linux-arm
     - win-arm
 
 ---
 
-### IoT Demo
+## IoT
+
+https://twitter.com/sforkmann/status/1049722323262160898
 
 ![images/forki_audio.png](images/forki_audio.png)
 
----
-
-### IoT Demo
-
-https://twitter.com/sforkmann/status/1049722323262160898
 
 ***
 
 ## Docker
 
-- .net core docker images
+<img src="images/docker.png" style="width: 200px; background: white"  />
 
----
 
-### Docker Demo
+https://hub.docker.com/_/microsoft-dotnet-core
 
-- e.g. Docker deploy from SAFE template
+* >10M pulls from Docker Hub
+* Featured Repos:
+  * .NET Core SDK
+  * ASP.NET Core Runtime
+  * .NET Core Runtime
+  * .NET Core Runtime Dependencies
+  * .NET Core Samples
+* `--deploy docker` option for [SAFE Template](https://github.com/SAFE-Stack/SAFE-template)
+
 
 ***
 
 ## Serverless
 
+
+<img src="images/azure_functions.jpg" style="width: 200px; background: white"  />
+<img src="images/aws_lambda.png" style="width: 200px; background: white"  />
+
 - Azure Functions
+    - https://docs.microsoft.com/pl-pl/azure/azure-functions/functions-reference-fsharp
+    - https://github.com/mikhailshilkov/azure-functions-fsharp-examples
 - AWS Lambda
-
----
-
-### Demo
-
-- Azure function
+    - https://aws.amazon.com/blogs/developer/f-tooling-support-for-aws-lambda/
 
 ***
 
 ## Other platforms & tools
 
-- Fez
-- FAKE
-- Tests?
-- various DSL like Pulumi?
-- ... ?
+---
+
+### Tests
+
+* https://github.com/fsprojects/FsUnit
+* https://github.com/haf/expecto
+* https://github.com/fscheck/FsCheck
+* https://github.com/SwensenSoftware/unquote
+
+---
+
+### Fake
+
+![fake](images/fake_script.png)
+
+--> https://fake.build/
+
+---
+
+### Fez
+
+![fez](images/fez.png)
+
+https://github.com/kjnilsson/fez
+
+--> [FEZ - fsharp type safety for the BEAM](https://skillsmatter.com/skillscasts/11312-fez-fsharp-type-safety-for-the-beam) (F# eXchange '18)
+
+---
+
+### Pulumi
+
+<img src="images/pulumi.jpg" style="width:650px; background: transparent; border:none; box-shadow: none"  />
+
+
+<small> https://twitter.com/MikhailShilkov/status/1097408586349719552 </small>
+
+--> Lightning Talk: Cloud Infrastructure as F# 
+
+---
+
+
+
+### More?
 
 ***
 
 # Mixing platforms
-
-- SAFE
-- Not just Web apps
-- Sharing code
-- Datto RMM
 
 ---
 
@@ -461,7 +514,15 @@ https://twitter.com/sforkmann/status/1049722323262160898
 
 # Recap
 
+* Great tools -> evolution
+* F# targets many platforms
+* Combining platforms & sharing code
+
 ***
+
+# Q&A
+
+---
 
 ### Notes 
 

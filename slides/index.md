@@ -22,22 +22,21 @@ https://theimowski.com
 
 ***
 
-# Plan
-
-- Goals
-- The slogan
-- History, evolution
-- Platforms
-- Mixing platforms
-
-***
-
 # Goals
 
 - Review possibilities
 - Share experiences
 - Inspire ideas
 - Praise F#
+
+***
+
+# Plan
+
+- The slogan
+- History, evolution
+- Platforms
+- Mixing platforms
 
 ***
 
@@ -300,6 +299,9 @@ https://www.vagrantup.com/
 ### Mobile Demo
 
 * Fabulous app for iOS and Android
+* Talks:
+    * Jim Bennett - Build Cross-Platform Mobile Apps Using Fabulous
+    * Kunjan Dalal - From Concept to Creation in a Week with Fabulous 
 
 ***
 
@@ -315,12 +317,17 @@ https://www.vagrantup.com/
 
 ---
 
-## IoT
-
-https://twitter.com/sforkmann/status/1049722323262160898
-
 ![images/forki_audio.png](images/forki_audio.png)
 
+--- 
+
+![images/iot_fableconf.png](images/iot_fableconf.png)
+
+<small> https://twitter.com/airuyi/status/1056198418501124096 </small>
+
+---
+
+https://twitter.com/sforkmann/status/1049722323262160898
 
 ***
 
@@ -351,9 +358,12 @@ https://hub.docker.com/_/microsoft-dotnet-core
 
 - Azure Functions
     - https://docs.microsoft.com/pl-pl/azure/azure-functions/functions-reference-fsharp
-    - https://github.com/mikhailshilkov/azure-functions-fsharp-examples
+    - Talk: Mikhail Shilkov - Durable F#unctions
 - AWS Lambda
     - https://aws.amazon.com/blogs/developer/f-tooling-support-for-aws-lambda/
+- Google Cloud
+    - no official F# support, but can do F# -> Node.js
+
 
 ***
 
@@ -481,7 +491,7 @@ https://github.com/kjnilsson/fez
     * F# -> .NET Core and .NET 4.0
     * Windows, OSX and Linux
 * Browser viewer: F# -> JS
-* Development web server: F# -> .NET Core
+* (Maybe) Device GUI: F# -> ElectronJS
 * Shared F# code:
     * HTTP & WebSocket payload DTOs
     * JSON serialisation (Thoth.Json)
@@ -509,6 +519,13 @@ https://github.com/kjnilsson/fez
 - Docker
 - Serverless
 - Other?
+
+---
+
+## SAFE Talks
+
+* Anthony Brown - Workshop: Up and Running with the SAFE Stack
+* Tomasz Heimowski - F# SAFE Stack: Current State
 
 ***
 

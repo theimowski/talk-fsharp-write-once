@@ -240,19 +240,20 @@ https://www.vagrantup.com/
 
 ### Web Demo
 
-* Fable template
-* Elmish
-* React
+* Fable + Elmish + React template
 * Hot Module Replacement
-* CSS (new Type provider) ?
-* Various browsers ?
+* https://fable.io/repl/
+* [Giraffe view engine - F# to HTML](https://github.com/giraffe-fsharp/Giraffe/blob/master/DOCUMENTATION.md#giraffe-view-engine)
+* [Fable Material UI - F# to CSS](https://mvsmal.github.io/fable-material-ui/#/demos/app-bar)
+* [F# Type provider for CSS](https://twitter.com/FableCompiler/status/1098545200899735552)
 
 ---
 
 ### Web Demo recap
 
-* ...
-* JavaScript - not only Web
+* Seamless integration with JS ecosystem
+* Ability to output also HTML/CSS from F#
+* Not only Web - Node.js
 
 ***
 
@@ -276,10 +277,14 @@ https://www.vagrantup.com/
 
 ### Desktop GUI Demo
 
-* https://github.com/fable-compiler/samples-electron, or
-* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo, or 
-* https://github.com/fable-compiler/fable-templates/tree/master/electron/Content
-* run on all OS
+* 3 Operating systems:
+    * OSX (local MacBook)
+    * Windows (Virtualbox, Vagrant)
+    * Ubuntu (Virtualbox, Vagrant)
+* Create app from fable-electron template
+* Print OS information
+* Run the app on all OS
+
 
 ***
 
@@ -298,10 +303,15 @@ https://www.vagrantup.com/
 
 ### Mobile Demo
 
-* Fabulous app for iOS and Android
-* Talks:
-    * Jim Bennett - Build Cross-Platform Mobile Apps Using Fabulous
-    * Kunjan Dalal - From Concept to Creation in a Week with Fabulous 
+* iOS and Android
+* Fabulous dotnet template
+
+---
+
+### Mobile
+
+* Jim Bennett - Build Cross-Platform Mobile Apps Using Fabulous
+* Kunjan Dalal - From Concept to Creation in a Week with Fabulous 
 
 ***
 
@@ -549,3 +559,14 @@ https://github.com/kjnilsson/fez
 - templates
 - multi-target (full .net, .net core)
 - create gifs / videos for demos fallback
+- fix ubuntu dotnet watch? maybe apt update?
+
+---
+
+### Desktop gui
+
+
+* https://github.com/fable-compiler/samples-electron, or
+* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo, or 
+* https://github.com/fable-compiler/fable-templates/tree/master/electron/Content
+* run on all OS

@@ -80,7 +80,7 @@ https://fsharp.org/history/
 - data-transition : fade
 - data-transition-speed : slow
 
-<img src="images/.net.png" style="width: 400px; background: white"  />
+<img src="images/net.png" style="width: 400px; background: white"  />
 
 ---
 
@@ -118,7 +118,7 @@ https://fsharp.org/history/
 - data-transition : fade
 - data-transition-speed : slow
 
-<img src="images/.netcore.png" style="width: 400px; background: white"  />
+<img src="images/netcore.png" style="width: 400px; background: white"  />
 
 ---
 
@@ -550,4 +550,4 @@ https://github.com/kjnilsson/fez
 
 Slides available at 
 
-https://theimowski.com/talk-fsharp-write-once
+https://theimowski.com/talk-fsharp-write-once/index.html

@@ -6,17 +6,16 @@
 
 ***
 
-# F#: Write once, run (nearly) anywhere!
+## F#: Write once, 
+## run (nearly) anywhere!
 
 
-<img src="images/fsharp.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/fsharp.png" style="width:180px; background: transparent; border:none; box-shadow: none"  />
 
-Tomasz Heimowski 
+Tomasz Heimowski *@theimowski*
 
 <img src="images/twitter.png" style="width:48px; background: transparent; border:none; box-shadow: none"  />
 <img src="images/github.png" style="width:48px; background: transparent; border: none; box-shadow: none"  />
-
-*@theimowski*
 
 https://theimowski.com
 
@@ -171,8 +170,6 @@ https://fsharp.org/history/
 
 ---
 
-
-
 ### NET Core 3.0 Supported OS
 
 * Windows Client                | 7 SP1+, 8.1                   | x64, x86       
@@ -188,7 +185,7 @@ https://fsharp.org/history/
 * SUSE Enterprise Linux (SLES)  | 12 SP2+                       | x64            
 * Alpine Linux                  | 3.8+                          | x64, ARM64     
 
-[Data from GitHub](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md)
+<small> https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md</small>
 
 ---
 
@@ -218,7 +215,7 @@ https://www.vagrantup.com/
 
 ## Web
 
-<img src="images/web.jpeg" style="width: 400px; background: white"  />
+<img src="images/web.jpeg" style="width: 300px; background: white"  />
 
 <br/>
 
@@ -229,7 +226,6 @@ https://www.vagrantup.com/
     - JavaScript
     - HTML
     - CSS
-    - Web Assembly *
 
 ---
 
@@ -308,7 +304,7 @@ https://www.vagrantup.com/
 
 ---
 
-### Mobile
+### Mobile talks
 
 * Jim Bennett - Build Cross-Platform Mobile Apps Using Fabulous
 * Kunjan Dalal - From Concept to Creation in a Week with Fabulous 
@@ -327,11 +323,13 @@ https://www.vagrantup.com/
 
 ---
 
-![images/forki_audio.png](images/forki_audio.png)
+<img src="images/forki_audio.png" style="width: 400px; background: white"  />
 
 --- 
 
-![images/iot_fableconf.png](images/iot_fableconf.png)
+<img src="images/iot_fableconf.png" style="width: 400px; background: white"  />
+
+<br/>
 
 <small> https://twitter.com/airuyi/status/1056198418501124096 </small>
 
@@ -343,7 +341,7 @@ https://twitter.com/sforkmann/status/1049722323262160898
 
 ## Docker
 
-<img src="images/docker.png" style="width: 200px; background: white"  />
+<img src="images/docker.png" style="width: 150px; background: white"  />
 
 
 https://hub.docker.com/_/microsoft-dotnet-core
@@ -355,16 +353,23 @@ https://hub.docker.com/_/microsoft-dotnet-core
   * .NET Core Runtime
   * .NET Core Runtime Dependencies
   * .NET Core Samples
-* `--deploy docker` option for [SAFE Template](https://github.com/SAFE-Stack/SAFE-template)
 
+---
+
+## Docker
+
+<img src="images/docker.png" style="width: 150px; background: white"  />
+
+
+`--deploy docker` option for [SAFE Template](https://github.com/SAFE-Stack/SAFE-template)
 
 ***
 
 ## Serverless
 
 
-<img src="images/azure_functions.jpg" style="width: 200px; background: white"  />
-<img src="images/aws_lambda.png" style="width: 200px; background: white"  />
+<img src="images/azure_functions.jpg" style="width: 130px; background: white"  />
+<img src="images/aws_lambda.png" style="width: 130px; background: white"  />
 
 - Azure Functions
     - https://docs.microsoft.com/pl-pl/azure/azure-functions/functions-reference-fsharp
@@ -438,14 +443,11 @@ https://github.com/kjnilsson/fez
 
 * Web server: F# -> .NET Core
 * Web client: F# -> JavaScript
-* Cloud access: F# -> Azure
 * Shared F# code:
-    * Data-Transfer Objects
     * Remote call protocols
     * Server-side & client-side validation
     * etc...
 * https://safe-stack.github.io/docs/
-* https://github.com/SAFE-Stack/SAFE-template
 * https://github.com/SAFE-Stack/SAFE-BookStore
 
 ---
@@ -494,19 +496,16 @@ https://github.com/kjnilsson/fez
 
 
 <br/>
-<br/>
 
 * Remote Desktop in a browser (alpha version)
 * Device Agent: 
     * F# -> .NET Core and .NET 4.0
     * Windows, OSX and Linux
 * Browser viewer: F# -> JS
-* (Maybe) Device GUI: F# -> ElectronJS
 * Shared F# code:
     * HTTP & WebSocket payload DTOs
     * JSON serialisation (Thoth.Json)
     * Protocol for Web Remote Desktop (Apache Guacamole)
-* https://www.datto.com/business-management/datto-rmm
 
 ---
 
@@ -547,26 +546,8 @@ https://github.com/kjnilsson/fez
 
 ***
 
-# Q&A
+# Thank you!
 
----
+Slides available at 
 
-### Notes 
-
-- .NET Core
-- x-plat
-- SDK
-- templates
-- multi-target (full .net, .net core)
-- create gifs / videos for demos fallback
-- fix ubuntu dotnet watch? maybe apt update?
-
----
-
-### Desktop gui
-
-
-* https://github.com/fable-compiler/samples-electron, or
-* https://github.com/cmeeren/fable-elmish-electron-material-ui-demo, or 
-* https://github.com/fable-compiler/fable-templates/tree/master/electron/Content
-* run on all OS
+https://theimowski.com/talk-fsharp-write-once

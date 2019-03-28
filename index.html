@@ -1,0 +1,618 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>F#: Write once, run (nearly) anywhere!</title>
+    <meta name="description" content="F#: Write once, run (nearly) anywhere!">
+    <meta name="author" content="Tomasz Heimowski">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<h2>F#: Write once,</h2>
+<h2>run (nearly) anywhere!</h2>
+<img src="images/fsharp.png" style="width:180px; background: transparent; border:none; box-shadow: none"  />
+<p>Tomasz Heimowski <em>@theimowski</em></p>
+<img src="images/twitter.png" style="width:48px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/github.png" style="width:48px; background: transparent; border: none; box-shadow: none"  />
+<p><a href="https://theimowski.com">https://theimowski.com</a></p>
+</section>
+<section >
+<h1>Goals</h1>
+<ul>
+<li>Review possibilities</li>
+<li>Share experiences</li>
+<li>Inspire ideas</li>
+<li>Praise F#</li>
+</ul>
+</section>
+<section >
+<h1>Plan</h1>
+<ul>
+<li>The slogan</li>
+<li>History, evolution</li>
+<li>Platforms</li>
+<li>Mixing platforms</li>
+</ul>
+</section>
+<section >
+<section >
+<h1>The slogan</h1>
+<h2>Write once, run anywhere</h2>
+<ul>
+<li>Sun Microsystems</li>
+<li>Java cross-platform benefits</li>
+<li>Copied to make my talk more catchy</li>
+</ul>
+<p><a href="https://en.wikipedia.org/wiki/Write_once,_run_anywhere">https://en.wikipedia.org/wiki/Write_once,_run_anywhere</a></p>
+</section>
+<section >
+<p><img src="images/one_does_not_simply.jpg" alt="one_does_not_simply.jpg" /></p>
+</section>
+<section >
+<p><img src="images/java_debug_everywhere.png" alt="java_debug_everywhere.png" /></p>
+<small>
+https://blog.silentsignal.eu/2014/02/09/jdb-tricks-hacking-java-debug-wire/
+</small>
+</section>
+</section>
+<section >
+<section >
+<h1>History</h1>
+<ul>
+<li>F# evolution</li>
+<li>influential platforms / tools</li>
+<li>possibly not in chronological order</li>
+</ul>
+</section>
+<section >
+<p><a href="https://fsharp.org/history/">https://fsharp.org/history/</a></p>
+<p><img src="images/history-hopl.png" alt="history" /></p>
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/.net.png" style="width: 400px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/mono.png" style="width: 400px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/xamarin.jpg" style="width: 500px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<h3>FAKE - F# Make</h3>
+<img src="images/fake.png" style="width: 300px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/azure.png" style="width: 500px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/.netcore.png" style="width: 400px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/docker.png" style="width: 400px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/fable.png" style="width: 500px; background: white"  />
+</section>
+<section data-transition="fade" data-transition-speed="slow">
+<img src="images/fabulous.png" style="width: 600px; background: white"  />
+</section>
+</section>
+<section >
+<h1>Platforms</h1>
+<ul>
+<li>Desktop</li>
+<li>Mobile</li>
+<li>Web</li>
+<li>IoT</li>
+<li>Docker</li>
+<li>Serverless</li>
+<li>Other platforms</li>
+</ul>
+</section>
+<section >
+<section >
+<h2>Desktop</h2>
+<img src="images/desktop_windows.jpg" style="width: 300px; background: white"  />
+<img src="images/desktop_linux.jpg" style="width: 280px; background: white"  />
+<img src="images/desktop_mac.png" style="width: 290px; background: white"  />
+<br/>
+<ul>
+<li>.NET Core</li>
+<li>
+.NET SDK
+<ul>
+<li>templates</li>
+<li>watch mode</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h3>NET Core 3.0 Supported OS</h3>
+<ul>
+<li>Windows Client                | 7 SP1+, 8.1                   | x64, x86</li>
+<li>Windows 10 Client             | Version 1607+                 | x64, x86</li>
+<li>Windows Server                | 2008 R2 SP1+                  | x64, x86</li>
+<li>Mac OS X                      | 10.12+                        | x64</li>
+<li>Red Hat Enterprise Linux      | 6                             | x64</li>
+<li>Fedora                        | 28                            | x64</li>
+<li>Debian                        | 9                      | x64, ARM32, ARM64</li>
+<li>Ubuntu                        | 16.04+                   | x64, ARM32, ARM64</li>
+<li>Linux Mint                    | 18                            | x64</li>
+<li>openSUSE                      | 42.3+                         | x64</li>
+<li>SUSE Enterprise Linux (SLES)  | 12 SP2+                       | x64</li>
+<li>Alpine Linux                  | 3.8+                          | x64, ARM64</li>
+</ul>
+<small> https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md</small>
+</section>
+<section >
+<h3>Desktop Demo</h3>
+<ul>
+<li>
+3 Operating systems:
+<ul>
+<li>OSX (local MacBook)</li>
+<li>Windows (Virtualbox, Vagrant)</li>
+<li>Ubuntu (Virtualbox, Vagrant)</li>
+</ul>
+</li>
+<li>Create console app using .NET SDK</li>
+<li>Print OS information</li>
+<li>Run the app on all OS</li>
+<li>Run "watch" mode</li>
+</ul>
+<p><a href="https://www.vagrantup.com/">https://www.vagrantup.com/</a></p>
+</section>
+<section >
+<h3>Desktop Demo recap</h3>
+<ul>
+<li>Cross-platform .NET SDK</li>
+<li>Easy to set up</li>
+<li>Caution: "watch" + multi OS doesn't work with Paket</li>
+<li>What about GUI?</li>
+</ul>
+</section>
+</section>
+<section >
+<section >
+<h2>Web</h2>
+<img src="images/web.jpeg" style="width: 300px; background: white"  />
+<br/>
+<ul>
+<li>
+Frameworks
+<ul>
+<li>Fable</li>
+<li>WebSharper</li>
+</ul>
+</li>
+<li>
+Output
+<ul>
+<li>JavaScript</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/fable.png" style="width: 500px; background: white"  />
+</section>
+<section >
+<h3>Web Demo</h3>
+<ul>
+<li>Fable + Elmish + React template</li>
+<li>Hot Module Replacement</li>
+<li><a href="https://fable.io/repl/">https://fable.io/repl/</a></li>
+<li><a href="https://github.com/giraffe-fsharp/Giraffe/blob/master/DOCUMENTATION.md#giraffe-view-engine">Giraffe view engine - F# to HTML</a></li>
+<li><a href="https://mvsmal.github.io/fable-material-ui/#/demos/app-bar">Fable Material UI - F# to CSS</a></li>
+<li><a href="https://twitter.com/FableCompiler/status/1098545200899735552">F# Type provider for CSS</a></li>
+</ul>
+</section>
+<section >
+<h3>Web Demo recap</h3>
+<ul>
+<li>Seamless integration with JS ecosystem</li>
+<li>Ability to output also HTML/CSS from F#</li>
+<li>Not only Web - Node.js</li>
+</ul>
+</section>
+</section>
+<section >
+<section >
+<h2>Desktop GUI</h2>
+<img src="images/desktop_windows.jpg" style="width: 300px; background: white"  />
+<img src="images/desktop_linux.jpg" style="width: 280px; background: white"  />
+<img src="images/desktop_mac.png" style="width: 290px; background: white"  />
+<ul>
+<li>
+Electron <a href="https://electronjs.org/">https://electronjs.org/</a>
+<ul>
+<li>uses Node.js and Chromium</li>
+<li>F# -&gt; Fable -&gt; JS -&gt; Electron</li>
+</ul>
+</li>
+<li>
+Fabulous
+<ul>
+<li>WPF</li>
+<li>GTK</li>
+<li>Mac</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h3>Desktop GUI Demo</h3>
+<ul>
+<li>
+3 Operating systems:
+<ul>
+<li>OSX (local MacBook)</li>
+<li>Windows (Virtualbox, Vagrant)</li>
+<li>Ubuntu (Virtualbox, Vagrant)</li>
+</ul>
+</li>
+<li>Create app from fable-electron template</li>
+<li>Print OS information</li>
+<li>Run the app on all OS</li>
+</ul>
+</section>
+</section>
+<section >
+<section >
+<h2>Mobile</h2>
+<img src="images/ios-vs-android.jpg" style="width: 400px; background: white"  />
+<ul>
+<li>
+Frameworks
+<ul>
+<li>Xamarin + Fabulous</li>
+<li>React Native (again via Fable)</li>
+</ul>
+</li>
+<li>
+Targets
+<ul>
+<li>Android</li>
+<li>iOS</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h3>Mobile Demo</h3>
+<ul>
+<li>iOS and Android</li>
+<li>Fabulous dotnet template</li>
+</ul>
+</section>
+<section >
+<h3>Mobile talks</h3>
+<ul>
+<li>Jim Bennett - Build Cross-Platform Mobile Apps Using Fabulous</li>
+<li>Kunjan Dalal - From Concept to Creation in a Week with Fabulous</li>
+</ul>
+</section>
+</section>
+<section >
+<section >
+<h2>IoT</h2>
+<img src="images/raspberry.png" style="width: 400px; background: white"  />
+<br/>
+<ul>
+<li>
+.NET Core to ARM architecture
+<ul>
+<li>linux-arm</li>
+<li>win-arm</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<img src="images/forki_audio.png" style="width: 400px; background: white"  />
+</section>
+<section >
+<img src="images/iot_fableconf.png" style="width: 400px; background: white"  />
+<br/>
+<small> https://twitter.com/airuyi/status/1056198418501124096 </small>
+</section>
+<section >
+<p><a href="https://twitter.com/sforkmann/status/1049722323262160898">https://twitter.com/sforkmann/status/1049722323262160898</a></p>
+</section>
+</section>
+<section >
+<section >
+<h2>Docker</h2>
+<img src="images/docker.png" style="width: 150px; background: white"  />
+<p><a href="https://hub.docker.com/_/microsoft-dotnet-core">https://hub.docker.com/_/microsoft-dotnet-core</a></p>
+<ul>
+<li>&gt;10M pulls from Docker Hub</li>
+<li>
+Featured Repos:
+<ul>
+<li>.NET Core SDK</li>
+<li>ASP.NET Core Runtime</li>
+<li>.NET Core Runtime</li>
+<li>.NET Core Runtime Dependencies</li>
+<li>.NET Core Samples</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h2>Docker</h2>
+<img src="images/docker.png" style="width: 150px; background: white"  />
+<p><code>--deploy docker</code> option for <a href="https://github.com/SAFE-Stack/SAFE-template">SAFE Template</a></p>
+</section>
+</section>
+<section >
+<h2>Serverless</h2>
+<img src="images/azure_functions.jpg" style="width: 130px; background: white"  />
+<img src="images/aws_lambda.png" style="width: 130px; background: white"  />
+<ul>
+<li>
+Azure Functions
+<ul>
+<li><a href="https://docs.microsoft.com/pl-pl/azure/azure-functions/functions-reference-fsharp">https://docs.microsoft.com/pl-pl/azure/azure-functions/functions-reference-fsharp</a></li>
+<li>Talk: Mikhail Shilkov - Durable F#unctions</li>
+</ul>
+</li>
+<li>
+AWS Lambda
+<ul>
+<li><a href="https://aws.amazon.com/blogs/developer/f-tooling-support-for-aws-lambda/">https://aws.amazon.com/blogs/developer/f-tooling-support-for-aws-lambda/</a></li>
+</ul>
+</li>
+<li>
+Google Cloud
+<ul>
+<li>no official F# support, but can do F# -&gt; Node.js</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<section >
+<h2>Other platforms &amp; tools</h2>
+</section>
+<section >
+<h3>Tests</h3>
+<ul>
+<li><a href="https://github.com/fsprojects/FsUnit">https://github.com/fsprojects/FsUnit</a></li>
+<li><a href="https://github.com/haf/expecto">https://github.com/haf/expecto</a></li>
+<li><a href="https://github.com/fscheck/FsCheck">https://github.com/fscheck/FsCheck</a></li>
+<li><a href="https://github.com/SwensenSoftware/unquote">https://github.com/SwensenSoftware/unquote</a></li>
+</ul>
+</section>
+<section >
+<h3>Fake</h3>
+<p><img src="images/fake_script.png" alt="fake" /></p>
+<p>--&gt; <a href="https://fake.build/">https://fake.build/</a></p>
+</section>
+<section >
+<h3>Fez</h3>
+<p><img src="images/fez.png" alt="fez" /></p>
+<p><a href="https://github.com/kjnilsson/fez">https://github.com/kjnilsson/fez</a></p>
+<p>--&gt; <a href="https://skillsmatter.com/skillscasts/11312-fez-fsharp-type-safety-for-the-beam">FEZ - fsharp type safety for the BEAM</a> (F# eXchange '18)</p>
+</section>
+<section >
+<h3>Pulumi</h3>
+<img src="images/pulumi.jpg" style="width:650px; background: transparent; border:none; box-shadow: none"  />
+<small> https://twitter.com/MikhailShilkov/status/1097408586349719552 </small>
+<p>--&gt; Lightning Talk: Cloud Infrastructure as F#</p>
+</section>
+<section >
+<h3>More?</h3>
+</section>
+</section>
+<section >
+<section >
+<h1>Mixing platforms</h1>
+</section>
+<section >
+<h2>SAFE - Web</h2>
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+<br/>
+<br/>
+<ul>
+<li>Web server: F# -&gt; .NET Core</li>
+<li>Web client: F# -&gt; JavaScript</li>
+<li>
+Shared F# code:
+<ul>
+<li>Remote call protocols</li>
+<li>Server-side &amp; client-side validation</li>
+<li>etc...</li>
+</ul>
+</li>
+<li><a href="https://safe-stack.github.io/docs/">https://safe-stack.github.io/docs/</a></li>
+<li><a href="https://github.com/SAFE-Stack/SAFE-BookStore">https://github.com/SAFE-Stack/SAFE-BookStore</a></li>
+</ul>
+</section>
+<section >
+<h2>SAFE - Mobile</h2>
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+<br/>
+<br/>
+<ul>
+<li>REST API: F# -&gt; .NET Core</li>
+<li>Mobile apps: F# -&gt; JS -&gt; React Native -&gt; iOS + Android</li>
+<li>
+Shared F# code:
+<ul>
+<li>Business logic</li>
+<li>Mobile device OS classification</li>
+<li>etc...</li>
+</ul>
+</li>
+<li><a href="https://github.com/SAFE-Stack/SAFE-Nightwatch">https://github.com/SAFE-Stack/SAFE-Nightwatch</a></li>
+</ul>
+</section>
+<section >
+<h2>SAFE - IoT</h2>
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+<br/>
+<br/>
+<ul>
+<li>Web server: F# -&gt; .NET Core</li>
+<li>Web client: F# -&gt; JavaScript</li>
+<li>Raspberry PI: F# -&gt; .NET Core (linux-arm RID)</li>
+<li>
+Shared F# code:
+<ul>
+<li>Determining firmware</li>
+<li>Communication protocol</li>
+<li>etc...</li>
+</ul>
+</li>
+<li><a href="https://github.com/forki/audio">https://github.com/forki/audio</a></li>
+</ul>
+</section>
+<section >
+<h2>SAFE - Desktop</h2>
+<img src="images/datto-logo.png" style="width:360px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/heart.png" style="padding-left: 20px; padding-right: 20px; width:100px; background: transparent; border:none; box-shadow: none"  />
+<img src="images/safe.png" style="width:200px; background: transparent; border:none; box-shadow: none"  />
+<br/>
+<ul>
+<li>Remote Desktop in a browser (alpha version)</li>
+<li>
+Device Agent:
+<ul>
+<li>F# -&gt; .NET Core and .NET 4.0</li>
+<li>Windows, OSX and Linux</li>
+</ul>
+</li>
+<li>Browser viewer: F# -&gt; JS</li>
+<li>
+Shared F# code:
+<ul>
+<li>HTTP &amp; WebSocket payload DTOs</li>
+<li>JSON serialisation (Thoth.Json)</li>
+<li>Protocol for Web Remote Desktop (Apache Guacamole)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section data-background="images/datto-rmm-rto-screen.png" data-background-size="contain">
+</section>
+<section >
+<h2>SAFE - All inclusive?</h2>
+<img src="images/safe.png" style="width:256px; background: transparent; border:none; box-shadow: none"  />
+<br/>
+<br/>
+<ul>
+<li>Desktop</li>
+<li>Mobile</li>
+<li>Web</li>
+<li>IoT</li>
+<li>Docker</li>
+<li>Serverless</li>
+<li>Other?</li>
+</ul>
+</section>
+<section >
+<h2>SAFE Talks</h2>
+<ul>
+<li>Anthony Brown - Workshop: Up and Running with the SAFE Stack</li>
+<li>Tomasz Heimowski - F# SAFE Stack: Current State</li>
+</ul>
+</section>
+</section>
+<section >
+<h1>Recap</h1>
+<ul>
+<li>Great tools -&gt; evolution</li>
+<li>F# targets many platforms</li>
+<li>Combining platforms &amp; sharing code</li>
+</ul>
+</section>
+<section >
+<h1>Thank you!</h1>
+<p>Slides available at</p>
+<p><a href="https://theimowski.com/talk-fsharp-write-once">https://theimowski.com/talk-fsharp-write-once</a></p>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+

@@ -239,6 +239,7 @@ https://www.vagrantup.com/
 * Fable + Elmish + React template
 * Hot Module Replacement
 * https://fable.io/repl/
+* [Fable - React Server Side](https://github.com/fable-compiler/fable-react/blob/master/docs/server-side-rendering.md)
 * [Giraffe view engine - F# to HTML](https://github.com/giraffe-fsharp/Giraffe/blob/master/DOCUMENTATION.md#giraffe-view-engine)
 * [Fable Material UI - F# to CSS](https://mvsmal.github.io/fable-material-ui/#/demos/app-bar)
 * [F# Type provider for CSS](https://twitter.com/FableCompiler/status/1098545200899735552)
@@ -281,6 +282,13 @@ https://www.vagrantup.com/
 * Print OS information
 * Run the app on all OS
 
+---
+
+### Desktop GUI Demo Recap
+
+* Cross-platform ElectronJS
+* Easy to set up
+* Other options available
 
 ***
 
@@ -392,6 +400,7 @@ https://hub.docker.com/_/microsoft-dotnet-core
 * https://github.com/haf/expecto
 * https://github.com/fscheck/FsCheck
 * https://github.com/SwensenSoftware/unquote
+* https://github.com/lefthandedgoat/canopy
 
 ---
 
@@ -400,6 +409,18 @@ https://hub.docker.com/_/microsoft-dotnet-core
 ![fake](images/fake_script.png)
 
 --> https://fake.build/
+
+---
+
+### Jupyter Notebooks
+
+<img src="images/jupyter.png" style="width:150px; background: transparent; border:none; box-shadow: none"  />
+
+<br/>
+
+<img src="images/jupyer_screenshot.png" style="width:650px; background: transparent; border:none; box-shadow: none"  />
+
+https://github.com/fsprojects/IfSharp
 
 ---
 
